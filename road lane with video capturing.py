@@ -6,7 +6,7 @@ cap.set(3,640)
 cap.set(4,480)
   
 img= cap.read()   
- 
+  
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY) 
 blur = cv2.GaussianBlur(gray, (5, 5), 0) 
 edges = cv2.Canny(blur, 50, 150)
